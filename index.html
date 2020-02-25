@@ -394,54 +394,66 @@
 	  <div class="row justify-content-center">
         <div class="col-lg-8 mx-auto">
             
-			
+
 
   <iframe class="mySlides" src="https://www.youtube.com/embed/kj-s3w4FNIw" width="100%" height ="100%"></iframe>
   <iframe class="mySlides" src="https://www.youtube.com/embed/VfzlF2o7vGs" width="100%" height ="100%"></iframe>
   <iframe class="mySlides" src="https://www.bbc.com/news/av/embed/p0774gy5/48015873" width="100%" height ="100%"></iframe>
   <iframe class="mySlides" src="https://www.youtube.com/embed/vD9ramKhsjQ" width="100%" height ="100%"></iframe>
 
+  <p class="text-center">
+  
+  <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">
+  &#10094;          
+  </button>
+  <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">
+  &#10095;
+  </button>
+
+</p>
 
 
 <script>
-var myIndex = 0;
-carousel();
+var slideIndex = 1;
+showDivs(slideIndex);
 
-function carousel() {
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 5000); // Change image every 5 seconds
-}
-</script>
+  x[slideIndex-1].style.display = "block";
+}</script>
 
         </div>
 		<p><p>
         <div class="col-lg-4 mr-auto">
           <p class="lead"> 
 		  <h5>Select Appearances:</h5> <p>
-Speaker for <a href="https://www.ted.com/tedx/events/31075">TEDxUW 2018</a>, Making Waves: &apos;Band-Aids for Mental Health&apos;
+Speaker for <a href="https://www.ted.com/tedx/events/31075"><u>TEDxUW 2018</u></a>, Making Waves: &apos;Band-Aids for Mental Health&apos;
 <p>
-Appeared in <a href="https://www.facebook.com/worldeconomicforum/videos/2247688991982004/?v=2247688991982004">World Economic Forum </a>: Stress Kits for University Students (Online Video)
+Appeared in <a href="https://www.facebook.com/worldeconomicforum/videos/2247688991982004/?v=2247688991982004"><u>World Economic Forum</u> </a>: Stress Kits for University Students (Online Video)
 		  <p>
-Interviewed by <a href="https://www.bbc.com/news/av/embed/p0774gy5/48015873">BBC Toronto</a>: A First Aid Kit for Mental Health (Online Video)
+Interviewed by <a href="https://www.bbc.com/news/av/embed/p0774gy5/48015873"><u>BBC Toronto</u></a>: A First Aid Kit for Mental Health (Online Video)
 <p>
-Keynote for <a href="https://lfpress.com/news/local-news/fanshawe-colleges-innovation-week-delves-into-business-ideas"> Fanshawe College, Social Innovation Week 2019</a>: On Mental Health Innovation
+Keynote for <a href="https://lfpress.com/news/local-news/fanshawe-colleges-innovation-week-delves-into-business-ideas"> <u>Fanshawe College, Social Innovation Week 2019</u></a>: On Mental Health Innovation
 		  <p>
-Interviewed by <a href="http://gamesinstitute.libsyn.com/games-institute-podcast-tina-chan"> The Games Institute (Podcast)</a>: &apos;Video Games & Mental Health with Tina Chan&apos;
+Interviewed by <a href="http://gamesinstitute.libsyn.com/games-institute-podcast-tina-chan"> <u>The Games Institute (Podcast)</u></a>: &apos;Video Games & Mental Health with Tina Chan&apos;
 		  <p>
-Interviewed by <a href="https://www.macleans.ca/education/university/first-aid-kit-mental-health/">Maclean's University Edition</a>: &apos;How first-aid kits for mental health symptoms are helping Canadian university students&apos;
+Interviewed by <a href="https://www.macleans.ca/education/university/first-aid-kit-mental-health/"><u>Maclean's University Edition</u></a>: &apos;How first-aid kits for mental health symptoms are helping Canadian university students&apos;
 		  <p>
 </div>
       </div>
 
       <!-- About Section Button -->
-      <div class="lead text-center mt-4">
+      <div class="lead text-center mt-4"><p><p>
 I have been honoured to be invited to speak at events held by passionate individuals in spreading science and innovation.
 
 		
@@ -723,7 +735,7 @@ area of future research
  </ul>
 
  In final reflection, I believe the philosophical question of whether peer support should be encouraged with gamification 
- needs to be revisited, as in-game incentives can lessens the reflection of impact of support. Mental health expert involvement is suggested.
+ needs to be revisited, as in-game incentives can lessen the reflection of impact of support. Mental health expert involvement is suggested.
 
  </div>
 
@@ -1070,7 +1082,7 @@ Educating potential MUSEUM guests</b> on possible adaptations to climate change<
 The project was successful in process and delivery with strengths in teamwork and transparency across parties during the development process despite competing priorities during the short runway. 
 	<p><p>
 	 <h5>What I learned</h5>
-I learned to <b>ask the right questions</b> from subject matter experts to make sure artwork was representative of their messaging, and <b>organizing art assets</b> in ways which would save the developer time.<p><p>
+I learned to <b>ask the right questions</b> from subject matter experts to make sure artwork was representative of their messaging, and <b>organized art assets</b> in ways which would save the developer time.<p><p>
 <h5>
 What I would have done differently
 </h5>
@@ -1235,7 +1247,7 @@ Post-hackathon Learning Cirles pose as a method to accelerate startup developeme
   <p><p>
   Chan, T., McMurray, J., Levy, A. Marie, Wallace, J. R., & Sveistrup, H.. (2020). Post-Hackathon Learning Circles: Supporting Lean Startup Development. In CHI 2020.
    <p><p>
-   Chan, T., McMurray, J., Levy, A. Marie, Wallace, J. R., & Sveistrup, H.. (2020). Hallman Lecture Seriesw with Jane Philpott. Post-Hackathon Learning Circles: Supporting Lean Startup Development. Waterloo, Canada.
+   Chan, T., McMurray, J., Levy, A. Marie, Wallace, J. R., & Sveistrup, H.. (2020). Hallman Lecture Series with Jane Philpott. Post-Hackathon Learning Circles: Supporting Lean Startup Development. Waterloo, Canada.
 
 </div>
 
